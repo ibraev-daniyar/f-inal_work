@@ -42,7 +42,7 @@ body {
   list-style: none;
 }
 
-.list__item {
+.list-item {
   width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
 }
 
@@ -211,12 +211,7 @@ body {
 }
 
 .nav-link:hover {
-  color: var(--lightpurpule-color);
-  transition: color 0.3s ease-in-out;
-}
-
-.nav-link:hover {
-  color: var(--darkpurple-color);
+  color: var(--violet-color);
   background-color: transparent;
   transition: color 0.3s ease-in-out;
 }
@@ -253,7 +248,7 @@ body {
   margin-bottom: 38px;
 }
 
-.hero__wrapper {
+.hero-container {
   padding: 65px 0 58px 0;
   background-image: url(../img/microphone1920.svg);
   background-repeat: no-repeat;
@@ -329,6 +324,10 @@ body {
   gap: var(--gap);
 }
 
+.podcasts__item {
+  background-color: var(--white-color);
+}
+
 .podcasts__article {
   position: relative;
   width: 100%;
@@ -364,12 +363,15 @@ body {
   max-height: 140px;
 }
 
+.podcasts__item-img {
+  height: 140px;
+}
+
 .podcasts__item-content {
   margin-left: -5px;
   padding: 39px 31px;
   width: 100%;
   flex-direction: column;
-  background-color: var(--white-color);
 }
 
 .podcasts__item-time {
@@ -663,7 +665,19 @@ color: var(--grey-color);
 
 .playlists__item {
   position: relative;
+}
 
+.playlist-article {
+  position: relative;
+}
+
+.playlist-link {
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
 }
 
 .playlists__item-wrapper {
@@ -904,7 +918,7 @@ color: var(--grey-color);
 
 .about__textarea {
   padding: 30px 10px 10px 32px;
-  width: 920px;
+  width: 83%;
   height: 150px;
   resize: none;
   align-items: flex-start;
@@ -924,10 +938,11 @@ color: var(--grey-color);
 
 .about__form-wrapper {
   position: relative;
+  width: 40%;
 }
 
 .about__input {
-  width: 445px;
+  width: 100%;
   height: 70px;
   padding: 10px 10px 10px 32px;
   align-items: center;
@@ -1136,23 +1151,22 @@ color: var(--grey-color);
   flex-direction: column;
   height: 90px;
   flex-wrap: wrap;
-  column-gap: 56px;
+  column-gap: 90px;
   row-gap: 17px;
-  --offsets: 2;
 }
 
 .footer__wrapper-top {
   margin-bottom: 92px;
+  justify-content: space-between;
   column-gap: var(--gap);
-}
-
-.footer__wrapper-left {
-  width: 56.5%;
-  flex-direction: column;
 }
 
 .footer__nav {
   width: 41%;
+}
+
+.footer__wrapper-left {
+  flex-direction: column;
 }
 
 .footer__img {
