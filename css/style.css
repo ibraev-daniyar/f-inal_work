@@ -184,6 +184,59 @@ body {
   margin-right: 69px;
 }
 
+.path-black {
+  fill: var(--asphalt-color);
+}
+
+.path-violet {
+  fill: var(--violet-color);
+}
+
+.logo-link:focus .path-letter {
+  fill: var(--lightpurpule-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:focus .path-arrow {
+  fill: var(--darkasphalt-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:focus .footer__path-violet {
+  fill: var(--white-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:hover .path-letter {
+  fill: var(--violet-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:hover .path-arrow {
+  fill: var(--darkasphalt-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:hover .footer__path-violet {
+  fill: var(--white-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:active .path-letter {
+  fill: var(--darkpurple-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:active .path-arrow {
+  fill: var(--darkasphalt-color);
+  transition: fill 0.3s ease-in-out;
+}
+
+.logo-link:active .footer__path-violet {
+  fill: var(--white-color);
+  transition: fill 0.3s ease-in-out;
+}
+
 .header-nav {
   margin-right: auto;
 }
@@ -1166,6 +1219,25 @@ color: var(--grey-color);
   border: none;
 }
 
+.about__checkbox:focus-visible + .about__checkbox-descr {
+  color: var(--lightpurpule-color);
+}
+
+.about__checkbox:focus + .about__checkbox-descr {
+  color: var(--lightpurpule-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.about__checkbox:hover + .about__checkbox-descr  {
+  color: var(--violet-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.about__checkbox:active + .about__checkbox-descr  {
+ color: var(--darkpurple-color);
+ transition: color 0.3s ease-in-out;
+}
+
 .about__checkbox:checked + .about__checkbox-descr::after {
   opacity: 1;
   outline: none;
@@ -1182,6 +1254,14 @@ color: var(--grey-color);
 .footer__logo {
   display: block;
   margin-bottom: 17px;
+}
+
+.footer__path-white {
+  fill: var(--white-color);
+}
+
+.footer__path-violet {
+  fill: var(--lightpurpule-color);
 }
 
 .footer__link-social:not(:last-child) {
