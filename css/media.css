@@ -72,7 +72,7 @@
   }
 
   .hero-container {
-    padding: 91px 0 86px 0;
+    padding: 91px 0 83px 0;
     background-image: url(../img/microphone1024.svg);
     background-repeat: no-repeat;
     background-size: auto;
@@ -84,6 +84,10 @@
     width: 63%;
   }
 
+  .podcasts {
+    padding-top: 95px;
+  }
+
   .podcasts__item-content {
     padding: 38px 0px 0px 36px;
   }
@@ -93,7 +97,7 @@
   }
 
   .transfers {
-    padding-bottom: 96px;
+    padding-bottom: 97px;
   }
 
   .transfers-container {
@@ -171,7 +175,7 @@
     margin-top: 0;
     width: 146px;
     max-height: 111px;
-    padding: 39px 0 10px 10px;
+    padding: 39px 5px 10px 10px;
   }
 
   .playlists {
@@ -237,7 +241,7 @@
     width: 48%;
   }
 
-  .footer__nav {
+  .footer__wrapper-right {
     width: 55%;
   }
 
@@ -284,6 +288,10 @@
 
   .transfers__paragraph {
     width: 255px;
+  }
+
+  .guests__item-paragraph {
+    margin-bottom: 25px;
   }
 
 }
@@ -341,7 +349,7 @@
   }
 
   .transfers {
-    margin-bottom: 31px;
+    margin-bottom: 26px;
     padding-top: 96px;
     padding-bottom: 0;
   }
@@ -404,7 +412,7 @@
   }
 
   .guests {
-    padding-bottom: 87px;
+    padding-bottom: 89px;
   }
 
   .guests__span {
@@ -413,6 +421,14 @@
 
   .guests__paragraph {
     width: 100%;
+  }
+
+  .guests__list {
+    row-gap: 47px;
+  }
+
+  .guests__item-paragraph {
+    margin-bottom: 33px;
   }
 
   .guests__item {
@@ -424,7 +440,7 @@
   }
 
   .guests__item-wrapper {
-    padding-bottom: 76px;
+    padding-bottom: 40px;
     width: 67%;
   }
 
@@ -451,11 +467,11 @@
   }
 
   .buy__title {
-    margin-bottom: 12px;
+    margin-bottom: 20px;
     padding-left: 1px;
     padding-right: 167px;
-    padding-bottom: 36px;
-    background-position: 0px 113px;
+    padding-bottom: 25px;
+    background-position: 0px bottom;
     background-image: url(../img/wave-buy768.svg);
   }
 
@@ -491,7 +507,7 @@
   }
 
   .about__wrapper {
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     padding-bottom: 140px;
     width: 100%;
     background-image: url(../img/About-us-bg768.svg);
@@ -525,7 +541,7 @@
     height: 36px;
   }
 
-  .footer__nav {
+  .footer__wrapper-right{
     width: 100%;
   }
 
@@ -573,6 +589,10 @@
 
   .header-nav {
     padding: 17px 0;
+  }
+
+  .header-item:not(:last-child) {
+    margin-right: 7px;
   }
 
   .hero-container {
@@ -659,7 +679,7 @@
 
   .playlists__item-wrapper {
     margin-top: -6px;
-    padding: 10px 0px 5px 9px;
+    padding: 10px 5px 5px 9px;
     width: 112px;
   }
 
@@ -737,6 +757,8 @@
   }
 
   .buy__title {
+    padding-left: 0;
+    padding-right: 0;
     padding-bottom: 13px;
     background-position: center bottom;
   }
@@ -859,7 +881,7 @@
   }
 
   .guests__item-wrapper {
-    padding-bottom: 71px;
+    padding-bottom: 38px;
   }
 
   .guests__item {
@@ -1013,7 +1035,7 @@
   }
 
   .footer__wrapper-left {
-    margin-bottom: 79px;
+    margin-bottom: 49px;
   }
 
   .footer__link {
@@ -1021,13 +1043,21 @@
   }
 
   .footer__list {
-    column-gap: 5px;
+    width: 93%;
+    column-gap: 21px;
     height: 160px;
     row-gap: 17px;
   }
 
   .footer__wrapper-top {
-    margin-bottom: 36px;
+    margin-bottom: 8px;
+  }
+
+  .footer__wrapper-right {
+    margin: 0 0 0 -32px;
+    padding: 27px 20px 29px 32px;
+    width: calc(100% + 64px);
+    background-color: var(--darkasphalt-color);
   }
 
 }

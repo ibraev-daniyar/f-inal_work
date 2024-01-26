@@ -232,6 +232,10 @@ body {
   transition: stroke 0.3s ease-in-out;
 }
 
+.header-btn:focus-visible {
+  outline: none;
+}
+
 .header-btn:hover path {
   stroke: var(--lightpurpule-color);
   transition: stroke 0.3s ease-in-out;
@@ -295,6 +299,10 @@ body {
   transition: background-color 0.3s ease-in-out;
 }
 
+.btn:focus-visible {
+  outline: none;
+}
+
 .btn:hover {
   border-color: var(--lightpurpule-color);
   background-color: var(--lightpurpule-color);
@@ -325,11 +333,11 @@ body {
 }
 
 .podcasts__item {
-  background-color: var(--white-color);
+  position: relative;
 }
 
 .podcasts__article {
-  position: relative;
+  background-color: var(--white-color);
   width: 100%;
 }
 
@@ -350,12 +358,34 @@ body {
   background-color: var(--ivory-color);
 }
 
-.podcasts__link {
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.podcasts__link:focus .podcasts__article {
+  background-color: var(--lightpurpule-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.podcasts__link:focus .podcasts__item-text {
+  color: var(--white-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.podcasts__link:hover .podcasts__article {
+  background-color: var(--violet-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.podcasts__link:hover .podcasts__item-text {
+  color: var(--white-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.podcasts__link:active .podcasts__article {
+  background-color: var(--darkpurple-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.podcasts__link:active .podcasts__item-text {
+  color: var(--white-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .podcasts__item-picture {
@@ -563,6 +593,7 @@ body {
 }
 
 .guests__item-paragraph {
+  margin-bottom: 45px;
   color: var(--grey-color);
   line-height: 180%; /* 28.8px */
 }
@@ -583,6 +614,10 @@ body {
   border-color: var(--violet-color);
   background-color: var(--violet-color);
   transition: color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.guests__btn:focus-visible {
+  outline: none;
 }
 
 .guests__btn:hover {
@@ -671,18 +706,42 @@ color: var(--grey-color);
   position: relative;
 }
 
-.playlist-link {
-  content: "";
-  position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
+.playlist-link:focus .playlists__item-wrapper {
+  background-color: var(--lightpurpule-color);
+  border: var(--lightpurpule-color);
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.playlist-link:focus .playlists__item-text {
+  color: var(--white-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.playlist-link:hover .playlists__item-wrapper {
+  background-color: var(--violet-color);
+  border: var(--violet-color);
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.playlist-link:hover .playlists__item-text {
+  color: var(--white-color);
+  transition: color 0.3s ease-in-out;
+}
+
+.playlist-link:active .playlists__item-wrapper {
+  background-color: var(--darkpurple-color);
+  border: var(--darkpurple-color);
+  transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.playlist-link:active .playlists__item-text {
+  color: var(--white-color);
+  transition: color 0.3s ease-in-out;
 }
 
 .playlists__item-wrapper {
   margin-top: -6px;
-  padding: 15px 0 13px 17px;
+  padding: 15px 10px 13px 17px;
   border: 1px solid var(--ivory-color);
 }
 
@@ -797,6 +856,10 @@ color: var(--grey-color);
   border: 2px solid var(--beige-color);
   background-color: var(--sandy-color);
   transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+}
+
+.buy__btn:focus-visible {
+  outline: none;
 }
 
 .buy__btn:focus .buy__btn-span {
@@ -952,6 +1015,42 @@ color: var(--grey-color);
   background-color: var(--darkasphalt-color);
 }
 
+.about__textarea:focus {
+  background-color: var(--asphalt-color);
+  border-color: var(--lightpurpule-color);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.about__textarea:focus-visible {
+  outline: none;
+}
+
+.about__textarea:hover {
+  background-color: var(--asphalt-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about__textarea:active {
+  background-color: var(--darkasphalt-color);
+  border-color: var(--white-color);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.about__input:focus-visible {
+  outline: none;
+}
+
+.about__input:hover {
+  background-color: var(--asphalt-color);
+  transition: background-color 0.3s ease-in-out;
+}
+
+.about__input:active {
+  background-color: var(--darkasphalt-color);
+  border-color: var(--white-color);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
 .about__span-mistake {
   content: "";
   position: absolute;
@@ -983,44 +1082,16 @@ color: var(--grey-color);
   border-color: var(--white-color);
 }
 
+.about__input:invalid:placeholder-shown:focus {
+  background-color: var(--asphalt-color);
+  border-color: var(--lightpurpule-color);
+  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
+  border-color: var(--lightpurpule-color);
+}
+
 .about__input:invalid:placeholder-shown + .about__span-mistake::before,
 .about__input:valid:placeholder-shown + .about__span-mistake::before {
   visibility: hidden;
-}
-
-
-.about__textarea:focus {
-  background-color: var(--asphalt-color);
-  border-color: var(--lightpurpule-color);
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.about__textarea:hover {
-  background-color: var(--asphalt-color);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.about__textarea:active {
-  background-color: var(--darkasphalt-color);
-  border-color: var(--white-color);
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.about__input:focus {
-  background-color: var(--asphalt-color);
-  border-color: var(--lightpurpule-color);
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
-}
-
-.about__input:hover {
-  background-color: var(--asphalt-color);
-  transition: background-color 0.3s ease-in-out;
-}
-
-.about__input:active {
-  background-color: var(--darkasphalt-color);
-  border-color: var(--white-color);
-  transition: border-color 0.3s ease-in-out, background-color 0.3s ease-in-out;
 }
 
 .about__button {
@@ -1087,7 +1158,6 @@ color: var(--grey-color);
   opacity: 0;
   transition: opacity 0.3s;
 }
-
 
 .about__checkbox {
   position: absolute;
@@ -1161,7 +1231,7 @@ color: var(--grey-color);
   column-gap: var(--gap);
 }
 
-.footer__nav {
+.footer__wrapper-right {
   width: 41%;
 }
 
