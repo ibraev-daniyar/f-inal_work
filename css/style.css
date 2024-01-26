@@ -358,7 +358,7 @@ body {
   background-color: var(--ivory-color);
 }
 
-.podcasts__link:focus .podcasts__article {
+.podcasts__link:focus .podcasts__item-bg {
   background-color: var(--lightpurpule-color);
   transition: background-color 0.3s ease-in-out;
 }
@@ -368,7 +368,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.podcasts__link:hover .podcasts__article {
+.podcasts__link:hover .podcasts__item-bg {
   background-color: var(--violet-color);
   transition: background-color 0.3s ease-in-out;
 }
@@ -378,7 +378,7 @@ body {
   transition: color 0.3s ease-in-out;
 }
 
-.podcasts__link:active .podcasts__article {
+.podcasts__link:active .podcasts__item-bg {
   background-color: var(--darkpurple-color);
   transition: background-color 0.3s ease-in-out;
 }
