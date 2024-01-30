@@ -146,7 +146,7 @@
     width: 44%;
   }
 
-  .playlist-container {
+  .playlists-container {
     flex-direction: column;
   }
 
@@ -154,8 +154,45 @@
     --offsets: 2;
   }
 
-  .playlist-article {
+  .playlists-article {
     display: flex;
+    border: 1px solid var(--ivory-color);
+  }
+
+  .playlists-link:focus .playlists__item-wrapper {
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:hover .playlists__item-wrapper {
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:active .playlists__item-wrapper {
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:focus .playlists-article {
+    background-color: var(--lightpurpule-color);
+    border: var(--lightpurpule-color);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:hover .playlists-article {
+    background-color: var(--violet-color);
+    border: var(--violet-color);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:active .playlists-article {
+    background-color: var(--darkpurple-color);
+    border: var(--darkpurple-color);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
   }
 
   .playlists__span {
@@ -173,9 +210,10 @@
 
   .playlists__item-wrapper {
     margin-top: 0;
+    padding: 39px 5px 10px 10px;
     width: 146px;
     max-height: 111px;
-    padding: 39px 5px 10px 10px;
+    border: none;
   }
 
   .playlists {
@@ -437,6 +475,7 @@
 
   .guests__item-img {
     margin: 0 0 24px 0;
+    width: 100%;
   }
 
   .guests__item-wrapper {
@@ -659,6 +698,52 @@
     padding-bottom: 69px;
   }
 
+  .playlists__list {
+    justify-content: center;
+  }
+
+  .playlists__item {
+    width: 113px;
+    height: 112px;
+  }
+
+  .playlists-link:focus .playlists__item-wrapper {
+    background-color: var(--lightpurpule-color);
+    border: var(--lightpurpule-color);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:hover .playlists__item-wrapper {
+    background-color: var(--violet-color);
+    border: var(--violet-color);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:active .playlists__item-wrapper {
+    background-color: var(--darkpurple-color);
+    border: var(--darkpurple-color);
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:focus .playlists-article {
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:hover .playlists-article {
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+  .playlists-link:active .playlists-article {
+    background-color: transparent;
+    border: transparent;
+    transition: background-color 0.3s ease-in-out, border 0.3s ease-in-out;
+  }
+
+
   .playlists__paragraph {
     color: var(--grey-color);
     line-height: 16px;
@@ -673,14 +758,19 @@
     margin-bottom: 31px;
   }
 
-  .playlist-article {
+  .playlists-article {
     flex-direction: column;
+    border: none;
+  }
+
+  .playlist-picture {
+    height: 100%;
   }
 
   .playlists__item-wrapper {
-    margin-top: -6px;
     padding: 10px 5px 5px 9px;
     width: 112px;
+    border: 1px solid var(--ivory-color);
   }
 
   .transfers {
@@ -905,11 +995,24 @@
 
   .playlists__list {
     row-gap: 46px;
+    --offsets: 1;
+  }
+
+  .playlists__item {
+    width: calc((100% - (var(--gap) * var(--offsets))) / (var(--offsets) + 1));
+  }
+
+  .playlist-picture {
+    height: auto;
   }
 
   .playlists__item-country {
     right: 1px;
     left: auto;
+  }
+
+  .playlists__item-wrapper {
+    margin-top: -6px;
   }
 
   .buy {
